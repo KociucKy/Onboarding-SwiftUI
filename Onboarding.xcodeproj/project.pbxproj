@@ -13,6 +13,10 @@
 		884E70EA27088DD60080825D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884E70E927088DD60080825D /* Preview Assets.xcassets */; };
 		884E70F1270890570080825D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70F0270890570080825D /* Data.swift */; };
 		884E70F3270890680080825D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70F2270890680080825D /* BackgroundView.swift */; };
+		884E70F5270893660080825D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70F4270893660080825D /* OnboardingView.swift */; };
+		884E70FA270894320080825D /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70F9270894320080825D /* PageTabView.swift */; };
+		884E70FC270895410080825D /* TabDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70FB270895410080825D /* TabDetailsView.swift */; };
+		884E70FE270898000080825D /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E70FD270898000080825D /* ButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		884E70E927088DD60080825D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884E70F0270890570080825D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		884E70F2270890680080825D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		884E70F4270893660080825D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		884E70F9270894320080825D /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
+		884E70FB270895410080825D /* TabDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDetailsView.swift; sourceTree = "<group>"; };
+		884E70FD270898000080825D /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +63,9 @@
 		884E70E127088DD30080825D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				884E70E227088DD30080825D /* OnboardingApp.swift */,
-				884E70E427088DD30080825D /* ContentView.swift */,
-				884E70F2270890680080825D /* BackgroundView.swift */,
-				884E70F0270890570080825D /* Data.swift */,
-				884E70E627088DD60080825D /* Assets.xcassets */,
-				884E70E827088DD60080825D /* Preview Content */,
+				884E70F82708938F0080825D /* Models */,
+				884E70F6270893700080825D /* Views */,
+				884E70F7270893820080825D /* Resources */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -71,6 +76,37 @@
 				884E70E927088DD60080825D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		884E70F6270893700080825D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				884E70E427088DD30080825D /* ContentView.swift */,
+				884E70F2270890680080825D /* BackgroundView.swift */,
+				884E70F4270893660080825D /* OnboardingView.swift */,
+				884E70F9270894320080825D /* PageTabView.swift */,
+				884E70FB270895410080825D /* TabDetailsView.swift */,
+				884E70FD270898000080825D /* ButtonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		884E70F7270893820080825D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				884E70E227088DD30080825D /* OnboardingApp.swift */,
+				884E70E627088DD60080825D /* Assets.xcassets */,
+				884E70E827088DD60080825D /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		884E70F82708938F0080825D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				884E70F0270890570080825D /* Data.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				884E70E527088DD30080825D /* ContentView.swift in Sources */,
+				884E70FC270895410080825D /* TabDetailsView.swift in Sources */,
 				884E70F1270890570080825D /* Data.swift in Sources */,
 				884E70F3270890680080825D /* BackgroundView.swift in Sources */,
+				884E70F5270893660080825D /* OnboardingView.swift in Sources */,
 				884E70E327088DD30080825D /* OnboardingApp.swift in Sources */,
+				884E70FE270898000080825D /* ButtonsView.swift in Sources */,
+				884E70FA270894320080825D /* PageTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 8Y8FFN6N8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -306,7 +346,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Onboarding/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 8Y8FFN6N8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

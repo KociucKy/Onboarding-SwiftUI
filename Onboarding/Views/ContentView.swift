@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isOnboardingViewShowing = true
+    
     var body: some View {
-        ZStack {
-            BackgroundView()
-            Text("Hello, world!")
-                .padding()
+        Group{
+            if isOnboardingViewShowing {
+                OnboardingView(isOnboardingViewShowing: $isOnboardingViewShowing)
+            }else{
+                
+            }
         }
     }
 }
